@@ -24,8 +24,7 @@
       actions = true;
 
       "default-timeout" = 5000;
-      "ignore-yank" = true;
-
+      "ignore-timeout" = true;
       format = "<b>%a • %s</b>\\n%b";
 
       "urgency=high" = {
