@@ -82,9 +82,12 @@
     }
   ];
 
+  virtualisation.docker.enable = true;
+  virtualisation.docker.storageDriver = "btrfs";
+
   users.users.joke = {
     isNormalUser = true;
-    extraGroups = ["wheel" "audio" "users" "video" "vboxusers"];
+    extraGroups = ["wheel" "audio" "users" "video" "vboxusers" "docker"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree

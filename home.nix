@@ -41,9 +41,19 @@
     pkgs.ayugram-desktop
     pkgs.jq
     pkgs.mako
-    pkgs.swww
+    pkgs.awww
     pkgs.fastfetch
+    pkgs.prismlauncher
   ];
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+    enableBashIntegration = true;
+    options = [
+      "--cmd cd"
+    ];
+  };
 
   programs.helix = {
     enable = true;
